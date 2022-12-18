@@ -23,7 +23,7 @@ class Hospitals(Resource):
         data=Hospitals.parser.parse_args()
         hospital=HospitalModel.find_by_name(data['name'])
         if hospital:
-            return{"message":"hospital with this name already exists"}
+            return{"message":"hospital already exists"}
         else:
             hospital=HospitalModel(data['name'],data['area'])
             hospital.insert()
