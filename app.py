@@ -24,6 +24,6 @@ api.add_resource(Hospitals,'/hospitals')
 api.add_resource(Area,'/areas')
 api.add_resource(AllHospitals,'/all hospitals')
 
-if __name__=="__main__":
-    app.run(port=5000)
+
+app.run(port=5000)
     
