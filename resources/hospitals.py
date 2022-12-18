@@ -17,7 +17,7 @@ class Hospitals(Resource):
         if hospital:
             return hospital.json()
         else:
-            return{"message":"hospital can not found"}
+            return{"message":"hospital can not be found"}
             
     def post(self):
         data=Hospitals.parser.parse_args()
